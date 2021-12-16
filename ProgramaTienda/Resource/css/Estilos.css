@@ -18,6 +18,20 @@
     background-color: cadetblue;
 }
 
+.colorFondoProductos{
+    background-color: floralwhite;
+}
+
 .iconosLogin{
     position: absolute;
+}
+
+.productos{
+    margin-top: 1%;
+    width: 55%;
+    margin-left: 250px;
+}
+
+.btnCerrarSesion{
+    margin-left: 466px;
 }
