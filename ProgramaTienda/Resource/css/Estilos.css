@@ -1,0 +1,23 @@
+﻿h1{
+    text-align: center;
+}
+
+.centrar {
+    width: 37%;
+    margin-top: 2%;
+    margin-left: 400px;
+    border: 150px;
+}
+
+.imagenes {
+    margin-top: 5%;
+    margin-left: 100px;
+}
+
+.colorFondoAzul{
+    background-color: cadetblue;
+}
+
+.iconosLogin{
+    position: absolute;
+}
