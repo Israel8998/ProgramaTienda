@@ -54,7 +54,12 @@
                 <asp:TextBox class="form-control mb-3" placeholder="Nombre de Usuario" ID="txtUsuario" runat="server"></asp:TextBox>
                 <asp:TextBox class="form-control mb-3" placeholder="Contraseña" ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
             </div>
-            <asp:Button class="btn btn-warning" ID="btnIngresar" runat="server" Text="Iniciar Sesión" OnClick="btnIngresar_Click" />
+            <div class="mb-3">
+                <asp:Button class="btn btn-warning" ID="btnIngresar" runat="server" Text="Iniciar Sesión" OnClick="btnIngresar_Click" />
+            </div>
+            <div>
+                <asp:Button class="btn btn-warning" ID="btnCrearCuenta" runat="server" Text="Crear Usuario" OnClick="btnCrearCuenta_Click" />
+            </div>
         </div>
         <div class="auto-style6">
             <img alt="" src="https://cdn.icon-icons.com/icons2/827/PNG/128/user_icon-icons.com_66546.png" class="auto-style5" /></div>

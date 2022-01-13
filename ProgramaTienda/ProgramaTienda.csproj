@@ -43,7 +43,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,13 +74,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Despacho.aspx" />
     <Content Include="IngresoProductos.aspx" />
+    <Content Include="IngresoUsuarios.aspx" />
     <Content Include="InicioSesion.aspx" />
     <Content Include="Resource\css\Estilos.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Despacho.aspx.cs">
+      <DependentUpon>Despacho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Despacho.aspx.designer.cs">
+      <DependentUpon>Despacho.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GestionProducto.cs" />
     <Compile Include="GestionUsuario.cs" />
     <Compile Include="IngresoProductos.aspx.cs">
@@ -83,6 +99,13 @@
     <Compile Include="IngresoProductos.aspx.designer.cs">
       <DependentUpon>IngresoProductos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IngresoUsuarios.aspx.cs">
+      <DependentUpon>IngresoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngresoUsuarios.aspx.designer.cs">
+      <DependentUpon>IngresoUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InicioSesion.aspx.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -90,6 +113,7 @@
     <Compile Include="InicioSesion.aspx.designer.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>

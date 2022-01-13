@@ -33,5 +33,25 @@ namespace ProgramaTienda
                 Response.Write("<script language=javascript>alert('Usuario o contraseña incorrectos');</script>");
             }
         }
+
+        protected void btnCrearCuenta_Click(object sender, EventArgs e)
+        {
+            List<Usuario> log = new List<Usuario>();
+
+            String usuario = txtUsuario.Text;
+            String contraseña = txtContraseña.Text;
+
+            GestionUsuario modelo = new GestionUsuario();
+            log = modelo.consultar_Administrador(usuario, contraseña);
+            Usuario user1 = log.FirstOrDefault();
+            if (user1 != null)
+            {
+                Response.Redirect("IngresoUsuarios.aspx");
+            }
+            else
+            {
+                Response.Write("<script language=javascript>alert('Usuario o contraseña incorrectos');</script>");
+            }
+        }
     }
 }

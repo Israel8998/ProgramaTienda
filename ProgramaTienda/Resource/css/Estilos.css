@@ -18,20 +18,73 @@
     background-color: cadetblue;
 }
 
-.colorFondoProductos{
-    background-color: floralwhite;
-}
-
 .iconosLogin{
     position: absolute;
 }
 
 .productos{
-    margin-top: 1%;
-    width: 55%;
-    margin-left: 250px;
+    margin-top: -20%;
+    width: 50%;
+    margin-left: 50%;
 }
 
 .btnCerrarSesion{
     margin-left: 466px;
+}
+
+.lblPrecio{
+    margin-left: 70%;
+    margin-top: -14%;
+    border: black;
+}
+
+.txtCantidad{
+    width: 50%;
+    margin-top: 8%;
+}
+
+.Titulo{
+    border: double;
+    background-color: gainsboro;
+}
+
+.imagenesDespacho {
+    width: 70%;
+}
+
+.despacho {
+    width: 50%;
+    margin-left: 680px;
+    margin-top: -20%;
+    border: ridge;
+    background-color: gainsboro;
+}
+
+.imagenCalendario{
+    width: 10%;
+    float: right;
+    margin-top: -28%;
+}
+
+.calendario{
+    float: right;
+    margin-top: -6%;
+}
+
+.imagenIngProd{
+    width: 49%;
+}
+
+.btnCerrarSesionIngUs{
+    margin-left: initial;
+}
+
+.btnsIngProd{
+    margin-left: 50%;
+    margin-top: -5px;
+}
+
+.btnDerecha{
+    margin-top: -5.5%;
+    margin-left: 54%;
 }
