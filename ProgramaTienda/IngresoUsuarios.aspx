@@ -27,9 +27,9 @@
             </div>
             <asp:TextBox class="form-control mb-3" placeholder="Usuario" ID="txtRegistroUsuario" runat="server" BorderColor="Black"></asp:TextBox>
             <asp:TextBox class="form-control mb-3" placeholder="Contraseña" ID="txtRegistroContraseña" runat="server" BorderColor="Black" TextMode="Password"></asp:TextBox>
-            <asp:Button class="btn btn-outline-dark" ID="btnIngresarUsuario" runat="server" Text="Ingresar Usuario" OnClick="btnIngresarUsuario_Click" />
-            <asp:Button class="btn btn-outline-dark" ID="btnUsuarios" runat="server" Text="Usuarios" OnClick="btnUsuarios_Click" />
-            <asp:Button class="btn btn-outline-danger" ID="btnCerrarSesion" runat="server" Text="Login" OnClick="btnCerrarSesion_Click" />
+            <asp:Button class="btn btn-outline-light" ID="btnIngresarUsuario" runat="server" Text="Ingresar Usuario" OnClick="btnIngresarUsuario_Click" />
+            <asp:Button class="btn btn-outline-light" ID="btnUsuarios" runat="server" Text="Usuarios" OnClick="btnUsuarios_Click" />
+            <asp:Button class="btn btn-danger" ID="btnCerrarSesion" runat="server" Text="Login" OnClick="btnCerrarSesion_Click" />
         </div>
         <div class="align-content-center">
         <asp:GridView ID="GridView1"  runat="server"  CssClass="table table-responsive tabla_datos"  BorderColor="Transparent" AutoGenerateColumns="False">            <Columns>                <asp:BoundField DataField="Usuarios" HeaderText="USUARIO" />                <asp:BoundField DataField="Contraseña" HeaderText="CONTRASEÑA" />                 <asp:TemplateField>            <ItemTemplate>                <asp:LinkButton ID="btn_Asignar_rc" runat="server"  CommandArgument='<%# Eval("Usuarios") %>'   CssClass="btn btn-secondary" BorderColor="Transparent" OnClick="btnEliminar_Click" >                       <span class="glyphicon glyphicon-list-alt">ELIMINAR</span>                    </asp:LinkButton>                </ItemTemplate>            </asp:TemplateField>                </Columns>            </asp:GridView>

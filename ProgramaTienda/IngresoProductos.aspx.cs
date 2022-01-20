@@ -227,16 +227,21 @@ namespace ProgramaTienda
         {
             if(e.Row.RowType == DataControlRowType.DataRow)
             {
-                string estado = DataBinder.Eval(e.Row.DataItem, "Nombre").ToString();
-
-                if(estado == "0")
-                {
+                string estado1 = DataBinder.Eval(e.Row.DataItem, "Cantidad").ToString();
+                int cantidad = Int32.Parse(estado1);
+                if(cantidad <= 0)
                     e.Row.Cells[2].ForeColor = System.Drawing.Color.Red;
-                }
+                else if(cantidad <= 7)
+                    e.Row.Cells[2].ForeColor = System.Drawing.Color.Violet;
                 else
-                {
-                    e.Row.Cells[2].ForeColor = System.Drawing.Color.Green;  
-                }
+                    e.Row.Cells[2].ForeColor = System.Drawing.Color.Green;
+
+                string estado2 = DataBinder.Eval(e.Row.DataItem, "FechaVencimiento").ToString();
+                DateTime fecha = DateTime.Parse(estado2);
+                if (fecha <= DateTime.Now)
+                    e.Row.Cells[4].ForeColor = System.Drawing.Color.Red;
+                else
+                    e.Row.Cells[4].ForeColor = System.Drawing.Color.Green;
             }
         }
     }

@@ -46,7 +46,7 @@
         <h1>Inicio de sesión</h1>
         <div class="centrar">
             <div class="imagenes">
-                <img alt="" src="https://image.flaticon.com/icons/png/512/47/47774.png" class="auto-style1 mb-3" />
+                <img alt="" src="https://th.bing.com/th/id/OIP.cxg0etFRCEEcD3Arno956QHaHa?pid=ImgDet&rs=1" class="auto-style1 mb-3" />
             </div>
             <div>
                 &nbsp;</div>
@@ -55,10 +55,10 @@
                 <asp:TextBox class="form-control mb-3" placeholder="Contraseña" ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
             </div>
             <div class="mb-3">
-                <asp:Button class="btn btn-warning" ID="btnIngresar" runat="server" Text="Iniciar Sesión" OnClick="btnIngresar_Click" />
+                <asp:Button class="btn btn-outline-warning" ID="btnIngresar" runat="server" Text="Iniciar Sesión" OnClick="btnIngresar_Click" />
             </div>
             <div>
-                <asp:Button class="btn btn-warning" ID="btnCrearCuenta" runat="server" Text="Crear Usuario" OnClick="btnCrearCuenta_Click" />
+                <asp:Button class="btn btn-outline-warning" ID="btnCrearCuenta" runat="server" Text="Crear Usuario" OnClick="btnCrearCuenta_Click" />
             </div>
         </div>
         <div class="auto-style6">
